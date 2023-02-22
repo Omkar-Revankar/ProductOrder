@@ -1,6 +1,7 @@
 export class Product{
     id!:number;
     name!:string;
+    alt!:string;
     price!:number;
     tags?: string[];
     favorite!:boolean;

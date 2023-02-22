@@ -1,0 +1,139 @@
+<div class="main">
+  <div class="navbar">
+    <div class="icon"></div>
+    <div class="menu">
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">SERVICE</a></li>
+        <li><a href="#">DESIGN</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </div>
+    <div class="search">
+      <app-search></app-search>
+    </div>
+  </div>
+  <div class="content">
+    <h1>Online Shopping<br /><span>Electronics</span> <br />Home Appliance</h1>
+    <p class="par">
+      -Welcome to our e-commerce webpage! <br />
+      We're excited to offer you a convenient, reliable, and secure online
+      shopping experience.<br />
+      Browse our wide selection of products, add them to your cart, and check
+      out with ease. <br />Our team is committed to providing you with the best
+      possible customer service..<br />
+      Thank you for choosing us as your go-to online shopping destination. Happy
+      shopping!
+    </p>
+    <button class="cn">
+      <a routerLink="/"> Read More! </a>
+    </button>
+
+    <div class="form">
+      <form class="" method="get">
+        <!-- <label for="fname">First name:</label> -->
+        <input
+          type="text"
+          id="fname"
+          placeholder="Enter email"
+          name="fname"
+        /><br /><br />
+        <!-- <label for="lname">Last name:</label> -->
+        <input
+          type="text"
+          id="lname"
+          placeholder="Enter Password"
+          name="lname"
+        /><br /><br />
+        <!-- <input type="submit" value="Submit"> -->
+        <p class="link">
+          Don't have an account<br />
+          <a>Sign up </a> here
+        </p>
+        <p class="liw">Log in with</p>
+      </form>
+
+      <div class="icons">
+        <!-- Facebook -->
+        <a class="i" style="background-color: #3b5998"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+
+        <!-- Twitter -->
+        <a class="i" style="background-color: #55acee"
+          ><i class="fab fa-twitter"></i
+        ></a>
+
+        <!-- Google -->
+        <a class="i" style="background-color: #dd4b39"
+          ><i class="fab fa-google"></i
+        ></a>
+
+        <!-- Instagram -->
+        <a class="i" style="background-color: #ac2bac"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <!-- Whatsapp -->
+        <a class="i" style="background-color: #25d366"
+          ><i class="fab fa-whatsapp"></i
+        ></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="gallery">
+  <div class="container">
+    <a routerLink="/product/11">
+      <img src="assets/Acer Aspire 5 gaming.jpg" />
+      <!-- <p>Acer Aspire 5 Gaming</p> -->
+      Acer Aspire 5 Gaming
+      <h6>₹ 57999</h6></a
+    >
+    <button (click)="addToCart()" class="buy">Add To Cart</button>
+  </div>
+  <div class="container">
+    <a routerLink="/product/19">
+      <img src="assets/Samsung Galaxy Z Flip4.jpg" />
+      <!-- <p>Samsung Galaxy Z Flip4</p> -->
+      Samsung Galaxy Z Flip4
+      <h6>₹ 94999</h6></a
+    >
+    <button (click)="addToCart()" class="buy">Add To Cart</button>
+  </div>
+  <div class="container">
+    <a routerLink="/product/115">
+      <img src="assets/Sony Bravia 32.jpg" />
+      <!-- <p>Sony Bravia 32</p> -->
+      Sony Bravia 32
+      <h6>₹ 26990</h6></a
+    >
+    <button (click)="addToCart()" class="buy">Add To Cart</button>
+  </div>
+  <div class="container">
+    <a routerLink="/product/27">
+      <img src="assets/Iphone14.jpg" />
+      <!-- <p>Iphone14</p> -->
+      Iphone14
+      <h6>₹ 71999</h6></a
+    >
+    <button (click)="addToCart()" class="buy">Add To Cart</button>
+  </div>
+</div>
+<h3>Latest Launch</h3>
+<div class="video-card">
+  <div class="video-container">
+    <video src="assets/Samsung Galaxy_ Join the flip side.mp4" controls></video>
+  </div>
+  <div class="info-container">
+    <h2>Samusung Galaxy Flip 4</h2>
+    <p>
+      Introducing the Samsung Galaxy Flip 4 - the ultimate smartphone for those
+      who demand the best in style, functionality and convenience. With its
+      stunning foldable design, the Flip 4 offers the best of both worlds,
+      giving you a full-size phone that easily fits in your pocket.<br />
+      Order yours today and experience the best in smartphone technology!
+    </p>
+    <a routerLink="/product/19"> <button class="readMore">Read More</button></a>
+  </div>
+</div>

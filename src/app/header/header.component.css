@@ -1,26 +1,36 @@
 header {
   background-color: white;
   padding: 0;
-  border-bottom: 1px solid #e72929;
+  height: 94px;
+  border-bottom: 1px solid grey;
 }
 
 a {
-  color: #af1313;
+  color: var(--font1);
 }
 a:hover {
   background-color: #e72929;
   color: white;
 }
 
+img {
+  height: 84px;
+  padding: 5px;
+  transition: transform 1s ease-in-out;
+  border-radius: 50%;
+  border: 10px;
+  border-color: grey;
+}
+
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+  size: fixed;
+}
 .container {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-}
-
-a.logo {
-  font-weight: bold;
-  padding: 1cm;
 }
 nav ul {
   list-style-type: none;

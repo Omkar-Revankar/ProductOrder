@@ -12,6 +12,9 @@ import { TagsComponent } from './tags/tags.component';
 import { CartPageComponent } from './cart-page/cart-page.component';
 import { ProductPageComponent } from './product-page/product-page.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { FooterComponent } from './footer/footer.component';
+import { LoginpageComponent } from './loginpage/loginpage.component';
+
 
 @NgModule({
   declarations: [
@@ -22,13 +25,15 @@ import { NotFoundComponent } from './not-found/not-found.component';
     TagsComponent,
     CartPageComponent,
     ProductPageComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    FooterComponent,
+    LoginpageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    RatingModule
+    RatingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

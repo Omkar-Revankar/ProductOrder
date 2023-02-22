@@ -18,19 +18,21 @@ input {
 }
 
 div button {
-  color: grey;
+  color: white;
   height: 3rem;
   width: 5rem;
   font-size: 1rem;
   border-radius: 0 10rem 10rem 0;
   border: none;
-  background-color: #e72929;
+  background-color: #ff7200;
   color: white;
-  opacity: 0.8;
+  opacity: 1;
   outline: none;
 }
 
 div button:hover {
-  opacity: 1;
+  /* opacity: 0.5; */
+  color: #ff7200;
+  background-color: var(--background1);
   cursor: pointer;
 }
