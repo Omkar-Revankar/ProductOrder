@@ -6,16 +6,16 @@ import { HomeComponent } from './home/home.component';
 import { LoginpageComponent } from './loginpage/loginpage.component';
 
 const routes: Routes = [
-  {path: '', component:HomeComponent},
-  {path: 'search/:searchItem', component:HomeComponent},
-  {path:'tag/:tag', component:HomeComponent},
-  {path:'product/:id', component:ProductPageComponent},
-  {path:'cart-page', component:CartPageComponent},
-  {path:'login-page', component:LoginpageComponent}
+  { path: '', component: LoginpageComponent },
+  { path: 'search/:searchItem', component: HomeComponent },
+  { path: 'tag/:tag', component: HomeComponent },
+  { path: 'product/:id', component: ProductPageComponent },
+  { path: 'cart-page', component: CartPageComponent },
+  { path: 'login-page', component: LoginpageComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

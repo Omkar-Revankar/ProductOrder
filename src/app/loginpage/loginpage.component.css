@@ -5,15 +5,11 @@
 
 .main {
   width: 100%;
-  /* background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.5) 25%,
-    rgba(0, 0, 0, 0.5) 25%
-  ); */
   background-position: center;
   background-size: cover;
   height: auto;
   background-color: #fafafa;
+  color: #808080;
 }
 
 .navbar {
@@ -30,6 +26,7 @@
 
 .logo {
   color: #ff7200;
+  background-color: #ff0000;
   font-size: 35px;
   font-family: Arial;
   padding-left: 20px;
@@ -60,7 +57,8 @@ ul li {
 
 ul li a {
   text-decoration: none;
-  color: black;
+  color: #808080;
+  background-color: #ffffff;
   font-family: Arial;
   font-weight: bold;
   transition: 0.4s ease-in-out;
@@ -437,7 +435,7 @@ button {
 
 .readMore {
   background-color: orange;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.5), 0 10px 10px rgba(0, 0, 0, 0.8);
+  /* box-shadow: 0 14px 28px rgba(0, 0, 0, 0.5), 0 10px 10px rgba(0, 0, 0, 0.8); */
   transition: 0.4s;
 }
 
