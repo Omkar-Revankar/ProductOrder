@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
-import {RatingModule} from 'ng-starrating';
+// import {RatingModule} from 'ng-starrating';
 import { SearchComponent } from './search/search.component';
 import { FormsModule } from '@angular/forms';
 import { TagsComponent } from './tags/tags.component';
@@ -14,7 +14,6 @@ import { ProductPageComponent } from './product-page/product-page.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginpageComponent } from './loginpage/loginpage.component';
-
 
 @NgModule({
   declarations: [
@@ -27,15 +26,15 @@ import { LoginpageComponent } from './loginpage/loginpage.component';
     ProductPageComponent,
     NotFoundComponent,
     FooterComponent,
-    LoginpageComponent
+    LoginpageComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    RatingModule,
+    // RatingModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

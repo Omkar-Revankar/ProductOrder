@@ -21,6 +21,7 @@ ul {
 }
 .footer {
   background-color: white;
+  color: black;
   padding: 70px 0;
   border-top: 1px solid grey;
 }
@@ -31,6 +32,7 @@ ul {
 .footer-col h4 {
   font-size: 18px;
   color: #212121;
+  background-color: white;
   text-transform: capitalize;
   margin-bottom: 35px;
   font-weight: 500;
@@ -41,7 +43,8 @@ ul {
   position: absolute;
   left: 0;
   bottom: -10px;
-  background-color: #e91e63;
+  background-color: #212121;
+  color: white;
   height: 2px;
   box-sizing: border-box;
   width: 50px;
@@ -52,10 +55,11 @@ ul {
 .footer-col ul li a {
   font-size: 16px;
   text-transform: capitalize;
-  color: #ffffff;
+  /* color: #ffffff; */
   text-decoration: none;
   font-weight: 300;
   color: #212121;
+  background-color: white;
   display: block;
   transition: all 0.3s ease;
 }

@@ -1,19 +1,20 @@
 <app-not-found
   [visible]="!product.id"
   notFoundMessage="Product not Found"
-  resetLinkText="Go To Homepage">
+  resetLinkText="Go To Homepage"
+>
 </app-not-found>
 <div *ngIf="product.id" class="container">
-  <img [src]="product.imageUrl" [alt]="product.alt"/>
+  <img [src]="product.imageUrl" [alt]="product.alt" />
 
   <div class="details">
     <div class="header">
       <span class="name">
-        {{product.name}}
+        {{ product.name }}
       </span>
-      <span class="favorite {{product.favorite? '': 'not'}}">❤</span>
+      <span class="favorite {{ product.favorite ? '' : 'not' }}">.</span>
     </div>
-    <div class="rating">
+    <!-- <div class="rating">
       <star-rating
       [value]="product.stars"
       [totalstars]="5"
@@ -22,34 +23,37 @@
       size="25px"
       [readonly]="true">
     </star-rating>
-    </div>
+    </div> -->
 
     <div class="origins">
       <span *ngFor="let origin of product.origins">
-        {{origin}}
+        {{ origin }}
       </span>
     </div>
 
     <div class="tags">
-      <a *ngFor="let tag of product.tags" justifyContent="start" routerLink="/tag/{{tag}}">
-        {{tag}}
+      <a
+        *ngFor="let tag of product.tags"
+        justifyContent="start"
+        routerLink="/tag/{{ tag }}"
+      >
+        {{ tag }}
       </a>
       <!-- <app-tags [foodPageTags]="food.tags"></app-tags> -->
     </div>
 
     <div class="delivery-time">
       <span>
-       🕒 Delivery in <strong>{{product.delivery}} </strong> days
+        Delivery in <strong>{{ product.delivery }} </strong> days
       </span>
     </div>
 
     <div class="price">
       <span>
-        {{product.price | currency:'INR'}}
+        {{ product.price | currency : "INR" }}
       </span>
     </div>
 
-    <button (click)="addToCart()" >Add To Cart</button>
-
+    <button (click)="addToCart()">Add To Cart</button>
   </div>
 </div>
