@@ -63,10 +63,10 @@ ul {
   display: block;
   transition: all 0.3s ease;
 }
-.footer-col ul li a:hover {
+/* .footer-col ul li a:hover {
   color: grey;
   padding-left: 8px;
-}
+} */
 .footer-col .social-links a {
   display: inline-block;
   height: 40px;
@@ -79,12 +79,12 @@ ul {
   color: #212121;
   transition: all 0.5s ease;
 }
-.footer-col .social-links a:hover {
+/* .footer-col .social-links a:hover {
   color: #24262b;
   background-color: grey;
-}
+} */
 
-/*responsive*/
+/* responsive
 @media (max-width: 767px) {
   .footer-col {
     width: 50%;
@@ -95,4 +95,4 @@ ul {
   .footer-col {
     width: 100%;
   }
-}
+} */

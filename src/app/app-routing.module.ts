@@ -6,7 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginpageComponent } from './loginpage/loginpage.component';
 
 const routes: Routes = [
-  { path: '', component: LoginpageComponent },
+  { path: '', component: HomeComponent },
   { path: 'search/:searchItem', component: HomeComponent },
   { path: 'tag/:tag', component: HomeComponent },
   { path: 'product/:id', component: ProductPageComponent },
