@@ -8,6 +8,7 @@ header {
 
 a {
   color: var(--font1);
+  background-color: white;
 }
 a:hover {
   background-color: orange;
